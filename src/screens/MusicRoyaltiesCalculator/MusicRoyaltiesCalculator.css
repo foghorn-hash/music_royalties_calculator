@@ -1,0 +1,62 @@
+.calculator {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  margin: 10px;
+}
+
+.input-container input {
+    margin: 10px;
+}
+
+.calculate-button {
+  background-color: blueviolet !important;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(100, 100, 255, 0.2);
+  border: none;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+  width: 60vw;
+}
+
+.result {
+  font-family: Arial, sans-serif;
+}
+
+.platform {
+  background-color: black;
+  border: 1px solid brown;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(100, 100, 255, 0.2);
+  font-family: 'NCLRobowapix-Regular', sans-serif;
+  color: whitesmoke;
+  background-image: url('../../assets/platform.png');
+  background-size: cover; /* Ensures the image covers the full area */
+}
+
+.platform-logo {
+  max-width: 100px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(100, 100, 255, 0.2);
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 8px;
+}
