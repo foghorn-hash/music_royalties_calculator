@@ -52,6 +52,29 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.App-description {
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  width: 60vw;
+}
+
+.App-description p {
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  font-family: 'EjusackBold-Bold', sans-serif;
+  font-size: small;
+}
+
+.App-description ul li {
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  font-family: 'EjusackBold-Bold', sans-serif;
+  font-size: small;
+}
+
 .App-main {
   background-color: #282c34;
   background-image: url('./assets/16x9_Make_a_Cover_Art_for_digital_music2.png');
