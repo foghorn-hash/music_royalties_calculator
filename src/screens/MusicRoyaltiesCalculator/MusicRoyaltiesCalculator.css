@@ -1,5 +1,13 @@
+
+@font-face {
+  font-family: 'ABODIN-Regular';
+  src: url('../../assets/fonts/ABODIN-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 .calculator {
-  font-family: Arial, sans-serif;
+  font-family: 'ABODIN-Regular', sans-serif;
   text-align: center;
   padding: 20px;
 }

@@ -21,6 +21,13 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ABODIN-Regular';
+  src: url('./assets/fonts/ABODIN-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 .App-header {
   background-color: #282c34;
   background-image: url('./assets/16x9_Make_a_Cover_Art_for_digital_music1.png');
@@ -52,7 +59,7 @@ body {
   text-align: center; /* Centers text inside the element */
   font-size: calc(5px + 2vmin);
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'ABODIN-Regular', sans-serif;
 }
 
 .App-footer {
