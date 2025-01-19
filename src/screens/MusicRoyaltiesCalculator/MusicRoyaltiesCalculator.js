@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './MusicRoyaltiesCalculator.css'; // Optional for styling
 import Button from 'react-bootstrap/Button';
 import spotifyLogo from '../../assets/spotify.svg';
