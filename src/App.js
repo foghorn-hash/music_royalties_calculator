@@ -16,6 +16,7 @@ function App() {
       </main>
       <footer className="App-footer">
         <img src={design} className="App-design" alt="i4ware Software" />
+        <div className="App-copyright">Copyright © Spin Underground Records 2004-2025, all rights reserved.</div>
       </footer>
     </div>
   );

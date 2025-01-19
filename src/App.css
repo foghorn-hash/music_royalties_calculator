@@ -28,6 +28,13 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'EjusackBold-Bold';
+  src: url('./assets/fonts/EjusackBold-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 .App-header {
   background-color: #282c34;
   background-image: url('./assets/16x9_Make_a_Cover_Art_for_digital_music1.png');
@@ -41,7 +48,8 @@ body {
   justify-content: center;
   font-size: calc(8px + 2vmin);
   color: white;
-  font-family: 'NCLRobowapix-Regular', sans-serif;
+  font-family: 'ABODIN-Regular', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .App-main {
@@ -81,6 +89,16 @@ body {
   height: 10vmin;
   box-shadow: #282c34;
   margin: 10px;
+}
+
+.App-copyright {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-family: 'EjusackBold-Bold', sans-serif;
+  font-size: small;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @media (prefers-reduced-motion: no-preference) {

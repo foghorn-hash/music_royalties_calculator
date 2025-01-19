@@ -6,8 +6,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'EjusackBold-Bold';
+  src: url('../../assets/fonts/EjusackBold-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 .calculator {
-  font-family: 'ABODIN-Regular', sans-serif;
+  font-family: 'EjusackBold-Bold', sans-serif;
   text-align: center;
   padding: 20px;
 }
@@ -18,10 +25,30 @@
 
 .input-container label {
   margin: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .input-container input {
     margin: 10px;
+}
+
+.styled-input {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(255, 155, 0, 0.7);
+}
+
+.styled-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.styled-input:hover {
+  border-color: #0056b3;
 }
 
 .calculate-button {
@@ -31,6 +58,7 @@
   font-size: 16px;
   box-shadow: 5px 5px 10px rgba(0, 99, 0, 0.5), -5px -5px 15px rgba(0, 255, 0, 0.8);
   border: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .results {
@@ -43,7 +71,9 @@
 }
 
 .result {
-  font-family: Arial, sans-serif;
+  font-family: 'EjusackBold-Bold', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 11px;
 }
 
 .platform {
@@ -58,12 +88,13 @@
   color: whitesmoke;
   background-image: url('../../assets/platform.png');
   background-size: cover; /* Ensures the image covers the full area */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .platform-logo {
   max-width: 100px;
   margin-bottom: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(100, 100, 255, 0.7);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(255, 155, 0, 0.7);
   background-color: aliceblue;
   padding: 10px;
   border-radius: 8px;

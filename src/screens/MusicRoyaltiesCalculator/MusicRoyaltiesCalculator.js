@@ -54,6 +54,7 @@ function MusicRoyaltiesCalculator() {
           id="streams"
           value={streams}
           onChange={handleChange}
+          className="styled-input"
         />
       </div>
       <Button variant="primary" className="calculate-button">Calculate</Button>
