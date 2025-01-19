@@ -1,3 +1,10 @@
+body {
+  background-image: url('./assets/work-bg.png');
+  background-size: cover; /* Ensures the image covers the full area */
+  background-repeat: repeat-y;
+  background-position: center top;
+}
+
 .App {
   text-align: center;
 }
@@ -49,6 +56,8 @@
 }
 
 .App-footer {
+  position: fixed;
+  bottom: 0;
   background-color: #282c34;
   background-image: url('./assets/16x9_Make_a_Cover_Art_for_digital_music3.png');
   background-size: cover; /* Ensures the image covers the full area */
@@ -57,6 +66,8 @@
   font-size: calc(10px + 2vmin);
   color: white;
   font-family: 'CyberGorgon-Bold', sans-serif;
+  border-radius: 0px 8px 0px 0px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(100, 100, 255, 0.2);
 }
 
 .App-design {
