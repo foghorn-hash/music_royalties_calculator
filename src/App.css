@@ -67,7 +67,7 @@ body {
   color: white;
   font-family: 'CyberGorgon-Bold', sans-serif;
   border-radius: 0px 8px 0px 0px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(100, 100, 255, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(100, 100, 255, 0.6);
 }
 
 .App-design {

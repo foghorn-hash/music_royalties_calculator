@@ -55,7 +55,7 @@
 .platform-logo {
   max-width: 100px;
   margin-bottom: 10px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(100, 100, 255, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(100, 100, 255, 0.7);
   background-color: aliceblue;
   padding: 10px;
   border-radius: 8px;
