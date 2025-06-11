@@ -21,6 +21,7 @@
 
 .input-container {
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .input-container label {
@@ -29,7 +30,7 @@
 }
 
 .input-container input {
-    margin: 10px;
+    margin: 20px;
 }
 
 .styled-input {
@@ -53,7 +54,7 @@
 
 .calculate-button {
   background-color: blueviolet !important;
-  margin: 10px;
+  margin: 20px;
   padding: 10px 20px;
   font-size: 16px;
   box-shadow: 5px 5px 10px rgba(0, 99, 0, 0.5), -5px -5px 15px rgba(0, 255, 0, 0.8);
@@ -67,7 +68,11 @@
   justify-content: center;
   gap: 20px;
   font-family: Arial, sans-serif;
-  width: 60vw;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .result {
@@ -80,15 +85,16 @@
   background-color: black;
   border: 1px solid brown;
   border-radius: 8px;
-  padding: 0px;
   text-align: center;
-  width: 200px;
+  width: 100%;
+  max-width: 400px;
+  flex: 1 1 260px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(100, 100, 255, 0.6);
   font-family: 'NCLRobowapix-Regular', sans-serif;
   color: whitesmoke;
-  background-image: url('../../assets/platform.png');
-  background-size: cover; /* Ensures the image covers the full area */
+  background-size: cover;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
 }
 
 .platform-logo {
@@ -99,4 +105,14 @@
   background-color: aliceblue;
   padding: 10px;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 400px) {
+  .platform {
+    flex: 1 1 100%;
+  }
+
+  .results {
+    gap: 10px;
+  }
 }
