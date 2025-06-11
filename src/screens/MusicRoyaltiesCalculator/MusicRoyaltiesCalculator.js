@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './MusicRoyaltiesCalculator.css'; // Optional for styling
+import './MusicRoyaltiesCalculator.css';
 import Button from 'react-bootstrap/Button';
 import spotifyLogo from '../../assets/spotify.svg';
 import deezerLogo from '../../assets/deezer.svg';
@@ -12,10 +12,10 @@ import tiktokLogo from '../../assets/tiktok.svg';
 import youtubeLogo from '../../assets/youtube.svg';
 
 function MusicRoyaltiesCalculator() {
-  // State for the number of streams
   const [streams, setStreams] = useState(1000000);
+  const artistCommission = 0.6;
+  const minimumPayout = 50; // €50 minimum payout
 
-  // Platform data with rates
   const platforms = [
     { name: 'Spotify', rate: 0.00351234 },
     { name: 'Deezer', rate: 0.00616200 },
@@ -40,7 +40,6 @@ function MusicRoyaltiesCalculator() {
     YouTube: youtubeLogo,
   };
 
-  // Handle input change
   const handleChange = (e) => {
     setStreams(Number(e.target.value));
   };
@@ -59,22 +58,36 @@ function MusicRoyaltiesCalculator() {
       </div>
       <Button variant="primary" className="calculate-button">Calculate</Button>
       <div className="results">
-      {platforms.map((platform) => {
-        const logoPath = logoPaths[platform.name];
+        {platforms.map((platform) => {
+          const logoPath = logoPaths[platform.name];
+          const grossRevenue = streams * platform.rate;
+          const artistEarnings = grossRevenue * artistCommission;
 
-        return (
+          const yearsToMinimum = artistEarnings > 0
+            ? (minimumPayout / artistEarnings).toFixed(1)
+            : '∞';
+
+          return (
             <div key={platform.name} className="platform">
-            <img
-                src={logoPath} // Use the dynamic path here
+              <img
+                src={logoPath}
                 alt={platform.name}
                 className="platform-logo"
-            />
-            <div className="platform-details">
+              />
+              <div className="platform-details">
                 <h3>{platform.name}</h3>
-                <p className="result">{Number((streams * platform.rate).toFixed(2)).toLocaleString()} €</p>
+                <p className="result">
+                  Artist: {artistEarnings.toFixed(2)} € ({(artistCommission * 100).toFixed(0)}%)
+                </p>
+                <p className="result">
+                  Label: {(grossRevenue * (1 - artistCommission)).toFixed(2)} € (40%)
+                </p>
+                <p className="result">
+                  Years to reach 50 €: {yearsToMinimum}
+                </p>
+              </div>
             </div>
-            </div>
-        );
+          );
         })}
       </div>
     </div>
